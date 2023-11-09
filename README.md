@@ -1,2 +1,1 @@
-# rsschool-cv
-RS school education
+https://AlexeyArhangelskiy.github.io/rsschool-cv/
