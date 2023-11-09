@@ -3,7 +3,7 @@
 ## Contact
 * Berlin, Germany
 * arhmost@gmail.com
-* linkedin.com/in/aleksei-arkhangelskii(https://www.linkedin.com/in/aleksei-arkhangelskii)
+* [linkedin.com/in/aleksei-arkhangelskii](https://www.linkedin.com/in/aleksei-arkhangelskii)
 * telegram: @arhalexey
 
 ## Summary
@@ -19,44 +19,52 @@ Junior Fullstack Developer currently studying at 42 Berlin and RS school. I have
 ## Code Examples
 **JavaScript**
 ```javascript
-     const deadLine = '2023-01-01';
+const deadLine = '2023-01-01';
 
-        function getTimeRemaining(endtime) {
-            let days, hours, minutes, seconds;
-            const t = Date.parse(endtime) - Date.parse(new Date());
+    function getTimeRemaining(endtime)
+    {
+        let days, hours, minutes, seconds;
+        const t = Date.parse(endtime) - Date.parse(new Date());
 
-            if (t <= 0) {
-                days = 0;
-                hours = 0;
-                minutes = 0;
-                seconds = 0;
-            } else {
-                days = Math.floor(t / (1000 * 60 * 60 * 24)),
-                  hours = Math.floor((t / (1000 * 60 * 60) % 24)),
-                  minutes = Math.floor((t / 1000 / 60) % 60),
-                  seconds = Math.floor((t / 1000 ) % 60);
-            }
-                     
-
-            return {
-                'total': t,
-                'days': days,
-                'hours': hours,
-                'minutes': minutes,
-                'seconds': seconds
-            };
+        if (t <= 0)
+        {
+            days = 0;
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
         }
+        else
+        {
+            days = Math.floor(t / (1000 * 60 * 60 * 24)),
+            hours = Math.floor((t / (1000 * 60 * 60) % 24)),
+            minutes = Math.floor((t / 1000 / 60) % 60),
+            seconds = Math.floor((t / 1000 ) % 60);
+        }
+                     
+        return
+        {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
 
-        function getZero(num) {
-            if (num >= 0 && num < 10) {
+        function getZero(num)
+        {
+            if (num >= 0 && num < 10)
+            {
                 return `0${num}`;
-            } else {
+            }
+            else
+            {
                 return num;
             }
-
         }
 
-        function setClock(selector, endtime) {
+        function setClock(selector, endtime)
+        {
             const timer = document.querySelector(selector),
                   days = timer.querySelector('#days'),
                   hours = timer.querySelector('#hours'),
@@ -66,7 +74,8 @@ Junior Fullstack Developer currently studying at 42 Berlin and RS school. I have
 
             updateClock();      
         
-            function updateClock() {
+            function updateClock()
+            {
                 const t = getTimeRemaining(endtime);
 
                 days.innerHTML = getZero(t.days);
@@ -121,18 +130,21 @@ Junior Fullstack Developer currently studying at 42 Berlin and RS school. I have
 ```
 
 ## Experience
-* 2022 - Present BIM Software Engineer
-* 2020 - 2022 Project Engineer
-* 2013 - 2020 Structural Engineer
+* 2022 - Present<br>
+BIM Software Engineer
+* 2020 - 2022<br>
+Project Engineer
+* 2013 - 2020<br>
+Structural Engineer
 
 ## Education
 
-* Ural State University of Railway Transport
-Engineer's degree, Engineer Bridges and Tunnels
+* Ural State University of Railway Transport<br>
+Engineer's degree, Engineer Bridges and Tunnels<br>
 Sep 2010 - Jul 2015
 
-* 42 Berlin
-Aug 2023 - Present
+* 42 Berlin<br>
+Aug 2023 - Present<br>
 Software developer in the C program language
 
 ## Language
